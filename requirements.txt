@@ -1,0 +1,10 @@
+wheel
+djangorestframework
+django-filter
+# swagger
+drf-yasg
+djangorestframework-simplejwt
+psycopg2-binary
+Pillow
+python-decouple
+python-slugify
