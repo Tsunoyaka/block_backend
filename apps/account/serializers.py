@@ -95,7 +95,7 @@ class RestorePasswordSerializer(serializers.Serializer):
 
 class SetRestoredPasswordSerializer(serializers.Serializer):
     email = serializers.EmailField(required=True, max_length=255, validators=[email_validator])
-    code = serializers.CharField(min_legth=1, max_length=8, required=True)
+    code = serializers.CharField(min_length=1, max_length=8, required=True)
     new_password = serializers.CharField(max_length=128, required=True)
     new_pass_confirm = serializers.CharField(max_length=128, required=True)
     def validate_code(self, code):

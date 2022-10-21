@@ -5,10 +5,13 @@ from rest_framework.request import Request
 from rest_framework import status
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework.permissions import IsAuthenticated
-from .serializers import (SetRestoredPasswordSerializer, UserRegistrationSerializer,
-PasswordChangeSerializer,
-RestorePasswordSerializer
+from .serializers import (
+    SetRestoredPasswordSerializer, 
+    UserRegistrationSerializer,
+    PasswordChangeSerializer,
+    RestorePasswordSerializer
 )
+
 from apps.account import serializers
 User = get_user_model()
 class RegistrationView(APIView):
